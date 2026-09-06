@@ -1486,6 +1486,8 @@ Item {
 
         IdleInhibitor {
             widgetThickness: barWindow.widgetThickness
+            barThickness: barWindow.effectiveBarThickness
+            axis: barWindow.axis
             section: topBarContent.getWidgetSection(parent) || "right"
             parentScreen: barWindow.screen
         }
